@@ -109,7 +109,7 @@ void war_of_cards_betting_info()
     cout << "In the event that the dealer and player tie and both have a special hand (same suit, ascending order, or both)" << endl;
     cout << "The tie will be broken based off of who has the highest ranked suit." << endl;
     cout << "Suit rankings are as such: Clubs, Spades, Hearts, Diamonds. Where Clubs are the lowest and Diamonds the highest." << endl;
-    cout << "A tie is only possible if no special hands are present, and the user and player have the exact same total." << endl;
+    cout << "A tie is only possible if no special hands are present, and the user and player have the exact same total." << endl << endl;
 }
 
 //Prints the ruleset of war of cards
@@ -166,7 +166,7 @@ void user_direct(string& user_choice, long long& wallet)
         }
         //Will print if an invalid input occurred, or the user wanted to print a ruleset such that they will still be in the
         //User directory
-        cout << "Please enter which option you would like to select: ";
+        cout << "Please enter which option you would like to select, either play a game, see its rules set or quit: ";
         cin >> user_choice;
         cout << endl;
         if (user_choice == "quit" || user_choice == "q")
